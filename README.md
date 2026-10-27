@@ -24,12 +24,12 @@ como a y b eran objetos diferentes, modificar un objeto no afecta al otro
 
 ### Ejercicio 02 Operaciones e índices en StringBuilder
 
-sb.delete(1, 4); // elimina los caracteres de 1 a antes del 4 
-sb.insert(1, "xyz"); // incerta xyz en la posición 1 AxyzE
-sb.reverse(); // voltea la cadena 
-sb.replace(1, 4, "-"); // reemplaza los caracteres del 1 a antes del 4 con un -
-System.out.println(sb.length()); // imprime el tamaño de la cadena
-System.out.println(sb.capacity()); // imprime el tamaño del StringBuilder 
+sb.delete(1, 4); // elimina los caracteres de 1 a antes del 4 <br>
+sb.insert(1, "xyz"); // incerta xyz en la posición 1 AxyzE <br>
+sb.reverse(); // voltea la cadena  <br>
+sb.replace(1, 4, "-"); // reemplaza los caracteres del 1 a antes del 4 con un - <br>
+System.out.println(sb.length()); // imprime el tamaño de la cadena <br>
+System.out.println(sb.capacity()); // imprime el tamaño del StringBuilder  <br>
 
 
 ```Text
@@ -43,17 +43,17 @@ System.out.println(sb.capacity()); // imprime el tamaño del StringBuilder
 
 ### 03 Referencias compartidas
 
-StringBuilder a = new StringBuilder("Hola"); // crea un StringBuilder
-StringBuilder b = a; // crea una referencia nueva al objeto a
-StringBuilder c = new StringBuilder("Hola"); // crea un StringBuilder
-a.append(" mundo"); // a;ade al final la palabra mundo
-b.delete(0, 5); // elimina de la pos 0 a la 4 por lo que el StringBuilder tiene un espacio al inicio, esto afecta a a dado que son el mismo objeto
-System.out.println(a);// imprime a
-System.out.println(b);// imprime a dado que b es referencia de a
-System.out.println(c);// imprime b
-System.out.println(a == b);//evalua si la referencia de a es la misma de b cosa que si
-System.out.println(a.equals(b));// evalua si el objeto que referencia a es igual al obeto que referencia b, como b y a son iguales entonces es true
-System.out.println(a.equals(c));// por las modificaciones anteriores c es Hola mientras que a es mundo, asi que es false 
+StringBuilder a = new StringBuilder("Hola"); // crea un StringBuilder <br>
+StringBuilder b = a; // crea una referencia nueva al objeto a <br>
+StringBuilder c = new StringBuilder("Hola"); // crea un StringBuilder <br>
+a.append(" mundo"); // a;ade al final la palabra mundo <br>
+b.delete(0, 5); // elimina de la pos 0 a la 4 por lo que el StringBuilder tiene un espacio al inicio, esto afecta a a dado que son el mismo objeto <br>
+System.out.println(a);// imprime a <br>
+System.out.println(b);// imprime a dado que b es referencia de a <br>
+System.out.println(c);// imprime b <br>
+System.out.println(a == b);//evalua si la referencia de a es la misma de b cosa que si <br>
+System.out.println(a.equals(b));// evalua si el objeto que referencia a es igual al obeto que referencia b, como b y a son iguales entonces es true <br>
+System.out.println(a.equals(c));// por las modificaciones anteriores c es Hola mientras que a es mundo, asi que es false  <br>
 
 ```Text
     mundo
