@@ -3,13 +3,13 @@ public class Ejercicios {
         
         // Ejercicio1();
         // Ejercicio2();
-        Ejercicio3();
+        // Ejercicio3();
     //     System.out.println(Ejercicio4(""));
     //     System.out.println(Ejercicio5("!aníta láva la tiná?"));   
     //     System.out.println(Ejercicio6("programacion"));
     //     System.out.println(Ejercicio7("java es genial","java","haskell"));
     //     System.out.println(Ejercicio8("hola y adios"));
-    //     System.out.println(Ejercicio9("(a+[(b)-[c]]))"));
+            System.out.println(Ejercicio9("a+(b{c}[d])"));
 
     //     EditorTexto Ed = new EditorTexto();
     //     Ed.escribir("Hola mundo");
@@ -227,7 +227,7 @@ public class Ejercicios {
             porque estoy entregando esta tarea tarde, voy a hacerlo de forma mas "tosca"
             */ 
             // se agrega una condicional para evitar casos como }{ y los de por validos
-            if (j>=2 && c.indexOf(pila.charAt(j-2)) + c.indexOf(pila.charAt(j-1)) == 5 && c.indexOf(pila.charAt(j-1)) < 3) { 
+            if (j>=2 && c.indexOf(pila.charAt(j-2)) + c.indexOf(pila.charAt(j-1)) == 5 && c.indexOf(pila.charAt(j-1)) > 2 ) { 
                 pila.delete(j - 2, j); 
                 j -= 2;
             }
