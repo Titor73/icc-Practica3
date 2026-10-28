@@ -227,7 +227,7 @@ public class Ejercicios {
             porque estoy entregando esta tarea tarde, voy a hacerlo de forma mas "tosca"
             */ 
             // se agrega una condicional para evitar casos como }{ y los de por validos
-            if (j>=2 && c.indexOf(pila.charAt(j-2)) + c.indexOf(pila.charAt(j-1)) == 5 && c.indexOf(pila.charAt(j-2)) < 3) { 
+            if (j>=2 && c.indexOf(pila.charAt(j-2)) + c.indexOf(pila.charAt(j-1)) == 5 && c.indexOf(pila.charAt(j-1)) < 3) { 
                 pila.delete(j - 2, j); 
                 j -= 2;
             }
